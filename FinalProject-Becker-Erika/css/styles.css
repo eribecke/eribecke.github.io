@@ -1,0 +1,593 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+  I360 Styles Starter
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* natural box model */
+html {
+  box-sizing: border-box
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* hides an element on screen, but not from screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+  UTILITIES
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* no break - example; optional to keep */
+.nobr {
+  white-space: nowrap;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+  START YOUR STYLES HERE
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+
+body{
+  background-color:rgb(0, 0, 0) ;
+}
+
+.logo{
+  height: 100px;
+}
+/* NAVIGATION */
+
+.openbtn {
+    position: fixed;
+    left: 20px;
+    top: 10px;
+    color: black;
+    font-family: 'PT Sans', sans-serif;
+}
+.openbtn:hover {
+    color: grey;
+}
+.menu-button {
+    position: relative;
+    top: -20px;
+    left: -3px;
+}
+.menu-text {
+    font-size: 12px;
+    display: block;
+    position: relative;
+    color: white;
+    top: -25px;
+    left: 17%;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style-type: none;
+}
+
+/* The side navigation menu */
+.all-over-bkg {
+    display: none;
+}
+
+.is-visible {
+    background-color: rgba(0,0,0,0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 9999;
+    display: block;
+}
+
+#mySidenav {
+    z-index: 10000;
+    position: fixed;
+}
+
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    background-color: white;  
+    background-image: url('/images/paper.png');
+    background-size: cover;
+    background-size: 300px 1100px;
+    background-repeat: no-repeat;
+}
+  
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 35px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Patrick Hand', cursive;
+    font-weight: bold;
+    color: black;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: grey;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+main {
+    transition: margin-left .5s;
+    padding: 0;
+}
+
+.home header{
+  background-image: url(../images/sky.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+}
+
+h1{
+  font-size: 40px;
+  font-weight: 700;
+  padding: 3em 0 0 0;
+  position: relative;
+  top: 10%;
+  left: 35%;
+  font-family: 'Pixelify Sans', sans-serif;
+  color: white;
+}
+h2{
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  top: 10%;
+  left: 38%;
+  font-family: 'Pixelify Sans', sans-serif;
+  color: white;
+}
+
+h3{
+  font-size: 25px;
+  font-weight: 600;
+  font-family: 'Pixelify Sans', sans-serif;
+  color: white;
+}
+
+p{
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+a{
+  font-size: 20px;
+  font-family: 'Pixelify Sans', sans-serif;
+  text-decoration: none;
+  color: white;
+  margin-top: 10px;
+}
+a:hover{
+  color: rgb(239,139,63);
+}
+.game{
+  margin: 3em 15em;
+  padding: 3em 0em 1em 0em;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(105,28,74);
+}
+
+.game img{
+  width: 80%;
+  margin: auto 0;
+  height: 600;
+  border: 3px solid white;
+}
+
+.game a{
+  font-size: 25px;
+  font-family: 'Pixelify Sans', sans-serif;
+  text-decoration: none;
+  color: white;
+  margin-top: 10px;
+
+}
+
+.game a:hover{
+  color: rgb(239,139,63);
+}
+.Gameplay{
+  margin: 3em 15em;
+  padding: 3em 3em;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgb(161,53,3);
+}
+.Gameplay img{
+  width: 50%;
+  margin: 3em 3em;
+  height: 300px;
+  border: 5px solid white;
+}
+
+.text{
+  text-align: center;
+  padding: 3em;
+}
+.text h3{
+  text-align: center;
+  font-size: 40px;
+}
+.text p{
+  font-family: 'Barlow', sans-serif;
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+
+.DesignP{
+  margin: 3em 15em;
+  padding: 3em 3em;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgb(105,28,74);
+}
+.DesignP img{
+  width: 50%;
+  margin: 3em 3em;
+  height: 300px;
+  border: 5px solid white;
+}
+
+.Assets{
+  margin: 3em 15em;
+  padding: 3em 3em;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgb(161,53,3);
+}
+
+.Assets img{
+  width: 50%;
+  margin: 3em 3em;
+  height: 300px;
+}
+
+footer {
+  text-align: center;
+  background-color: rgb(0,40,64);
+  padding: 2em;
+  margin: 0;
+  color: white;
+  font-family: 'Patrick Hand', cursive;
+}
+footer h4{
+  font-size: 25px;
+}
+footer p{
+  font-family: 'Roboto', sans-serif;
+}
+
+svg{
+  margin: 1em;
+  scale: 2;
+}
+
+/*GAMEPLAY*/
+
+video{
+  width: 900px;
+  height: 500px;
+  margin: 3em;
+}
+.video{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.video p{
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 40px;
+}
+
+.shop{
+  margin: 3em 15em;
+  padding: 3em 3em;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+
+.curr{
+  margin: 3em 15em;
+  padding: 3em 3em;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.controls{
+  margin: 3em 15em;
+  padding: 3em 3em;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.sections img{
+  width: 1000px;
+  height: 450px;
+}
+
+/*ASSETS*/
+
+
+.intro{
+  text-align: center;
+  margin: 5em;
+  font-size: 20px;
+}
+
+.credit{
+  margin-top: 5em;
+  font-size: 30px;
+}
+
+.TileMap{
+  margin: 3em 15em;
+  padding: 3em 3em;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.Music{
+  margin: 3em 15em;
+  padding: 3em 3em;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.Parallax{
+  margin: 3em 15em;
+  padding: 3em 3em;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.Fader{
+  margin: 3em 15em;
+  padding: 3em 3em;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/*Contact*/
+
+.info{
+  margin-right: 10em;
+  padding: 3em 3em;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.profile{
+  border: 5px solid white;
+}
+
+
+/*Design*/
+
+.pixel{
+  margin: 3em 15em;
+  padding: 3em 3em;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* Bases code for slideshow obtained from https://www.w3schools.com/howto/howto_js_slideshow.asp */
+/* Slideshow container */
+* {box-sizing:border-box}
+.slideshow-container {
+  max-width: 50%;
+  position: relative;
+  margin: auto;
+
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.slidetext {
+  color: black;
+  background-color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: wrap;
+  text-align: center;
+  font-family: 'Patrick Hand', cursive;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  background-color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* end of slideshow code */
+
+
+/* Media queries */
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+  MEDIA QUERIES
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+  .Assets,.DesignP,.Gameplay,.shop,.curr,.controls,.TileMap,.Music,.Parallax,.Fader,.pixel,.info{
+    flex-direction: column;
+    margin: 2em 4em;
+  
+  }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .Assets,.DesignP,.Gameplay,.shop,.curr,.controls,.TileMap,.Music,.Parallax,.Fader,.pixel,.info{
+    flex-direction: column;
+    margin: 3em 7em;
+    
+  }
+ 
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+.Assets,.DesignP,.Gameplay,.shop,.curr,.controls,.TileMap,.Music,.Parallax,.Fader,.pixel,.info{
+  flex-direction: row;
+  margin: 3em 10em;
+ 
+}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+.Assets,.DesignP,.Gameplay,.shop,.curr,.controls,.TileMap,.Music,.Parallax,.Fader,.pixel,.info{
+  flex-direction: row;
+  margin: 3em 15em;
+  
+}
+}
+
+

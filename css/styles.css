@@ -286,7 +286,7 @@ a:hover{
 
 .text{
   text-align: center;
-  padding: 3em;
+  padding: 0;
 }
 .text h3{
   text-align: center;
@@ -452,17 +452,19 @@ video{
 /*Contact*/
 
 .info{
-  margin-right: 10em;
-  padding: 3em 3em;
   align-items: center;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  position: relative;
+  left: -10em;
+  padding: 0;
 
 }
 
 .profile{
   border: 5px solid white;
+  margin: 0;
+  padding: 0;
 }
 
 

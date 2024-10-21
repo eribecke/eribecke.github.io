@@ -83,6 +83,8 @@ li {
     display: none;
 }
 
+
+
 .is-visible {
     background-color: rgba(0,0,0,0.4);
     position: fixed;
@@ -197,6 +199,8 @@ main {
   height: 450px;
 }
 
+
+
 h1{
   font-size: 40px;
   font-weight: 700;
@@ -206,6 +210,7 @@ h1{
   left: 35%;
   font-family: 'Pixelify Sans', sans-serif;
   color: white;
+  max-width: fit-content;
 }
 h2{
   font-size: 30px;
@@ -215,6 +220,7 @@ h2{
   left: 38%;
   font-family: 'Pixelify Sans', sans-serif;
   color: white;
+  max-width: fit-content;
 }
 
 h3{
@@ -287,6 +293,9 @@ a:hover{
 .text{
   text-align: center;
   padding: 0;
+  margin: 0;
+  max-width: fit-content;
+  flex: 1;
 }
 .text h3{
   text-align: center;
@@ -377,6 +386,8 @@ video{
   
 }
 
+
+
 .curr{
   margin: 3em 15em;
   padding: 3em 3em;
@@ -394,6 +405,7 @@ video{
   flex-direction: row;
   justify-content: center;
 }
+
 
 .sections img{
   width: 1000px;
@@ -455,16 +467,24 @@ video{
   align-items: center;
   display: flex;
   flex-direction: row;
-  position: relative;
-  left: -10em;
+  justify-content: center;
   padding: 0;
+  margin-left: 0;
+  border: 0;
+  max-width: fit-content;
 
+}
+
+.info img{
+  width: 50%;
 }
 
 .profile{
   border: 5px solid white;
   margin: 0;
   padding: 0;
+  flex: 1;
+  max-width: fit-content;
 }
 
 

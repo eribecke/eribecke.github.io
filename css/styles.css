@@ -5,7 +5,10 @@
 html {
   box-sizing: border-box
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -35,65 +38,71 @@ html {
 
 
 
-body{
-  background-color:rgb(0, 0, 0) ;
+body {
+  background-color: rgb(0, 0, 0);
 }
 
-.logo{
+.logo {
   height: 100px;
 }
+
 /* NAVIGATION */
 
 .openbtn {
-    position: fixed;
-    left: 20px;
-    top: 10px;
-    color: black;
-    font-family: 'PT Sans', sans-serif;
+  position: fixed;
+  left: 20px;
+  top: 10px;
+  color: black;
+  font-family: 'PT Sans', sans-serif;
 }
+
 .openbtn:hover {
-    color: grey;
+  color: grey;
 }
+
 .menu-button {
-    position: relative;
-    top: -20px;
-    left: -3px;
+  position: relative;
+  top: -20px;
+  left: -3px;
 }
+
 .menu-text {
-    font-size: 12px;
-    display: block;
-    position: relative;
-    color: white;
-    top: -25px;
-    left: 17%;
-    font-family: 'Pixelify Sans', sans-serif;
-    font-size: 20px;
-    font-weight: 500;
+  font-size: 12px;
+  display: block;
+  position: relative;
+  color: white;
+  top: -25px;
+  left: 17%;
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
 }
+
 ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
+
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 /* The side navigation menu */
 .all-over-bkg {
-    display: none;
+  display: none;
 }
 
 
 
 .is-visible {
-    background-color: rgba(0,0,0,0.4);
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100%;
-    z-index: 9999;
-    display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 9999;
+  display: block;
 }
 
 /* Dropdown Button */
@@ -115,7 +124,7 @@ li {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -137,61 +146,69 @@ li {
 }
 
 #mySidenav {
-    z-index: 10000;
-    position: fixed;
+  z-index: 10000;
+  position: fixed;
 }
 
 .sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-    background-color: white;  
-    background-image: url('/images/paper.png');
-    background-size: cover;
-    background-size: 300px 1100px;
-    background-repeat: no-repeat;
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
+  left: 0;
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */
+  background-color: white;
+  background-image: url('/images/paper.png');
+  background-size: cover;
+  background-size: 300px 1100px;
+  background-repeat: no-repeat;
 }
-  
+
 /* The navigation menu links */
 .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 35px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-    font-family: 'Patrick Hand', cursive;
-    font-weight: bold;
-    color: black;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 35px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  font-family: 'Patrick Hand', cursive;
+  font-weight: bold;
+  color: black;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-    color: grey;
+  color: grey;
 }
 
 /* Position and style the close button (top right corner) */
 .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 main {
-    transition: margin-left .5s;
-    padding: 0;
+  transition: margin-left .5s;
+  padding: 0;
 }
 
-.home header{
+.home header {
   background-image: url(../images/sky.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -201,7 +218,7 @@ main {
 
 
 
-h1{
+h1 {
   font-size: 40px;
   font-weight: 700;
   padding: 3em 0 0 0;
@@ -212,7 +229,8 @@ h1{
   color: white;
   max-width: fit-content;
 }
-h2{
+
+h2 {
   font-size: 30px;
   font-weight: 600;
   position: relative;
@@ -223,46 +241,48 @@ h2{
   max-width: fit-content;
 }
 
-h3{
+h3 {
   font-size: 25px;
   font-weight: 600;
   font-family: 'Pixelify Sans', sans-serif;
   color: white;
 }
 
-p{
+p {
   font-family: 'Roboto', sans-serif;
   color: white;
 }
 
-a{
+a {
   font-size: 20px;
   font-family: 'Pixelify Sans', sans-serif;
   text-decoration: none;
   color: white;
   margin-top: 10px;
 }
-a:hover{
-  color: rgb(239,139,63);
+
+a:hover {
+  color: rgb(239, 139, 63);
 }
-.game{
+
+.game {
   margin: 3em 15em;
   padding: 3em 0em 1em 0em;
   align-items: center;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-color: rgb(105,28,74);
+  background-color: rgb(105, 28, 74);
 }
 
-.game img{
+.game img {
   width: 80%;
   margin: auto 0;
   height: 600;
   border: 3px solid white;
 }
 
-.game a{
+.game a {
   font-size: 25px;
   font-family: 'Pixelify Sans', sans-serif;
   text-decoration: none;
@@ -271,69 +291,74 @@ a:hover{
 
 }
 
-.game a:hover{
-  color: rgb(239,139,63);
+.game a:hover {
+  color: rgb(239, 139, 63);
 }
-.Gameplay{
+
+.Gameplay {
   margin: 3em 15em;
   padding: 3em 3em;
   align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: rgb(161,53,3);
+  background-color: rgb(161, 53, 3);
 }
-.Gameplay img{
+
+.Gameplay img {
   width: 50%;
   margin: 3em 3em;
   height: 300px;
   border: 5px solid white;
 }
 
-.text{
+.text {
   text-align: center;
   padding: 0;
   margin: 0;
   max-width: fit-content;
   flex: 1;
 }
-.text h3{
+
+.text h3 {
   text-align: center;
   font-size: 40px;
 }
-.text p{
+
+.text p {
   font-family: 'Barlow', sans-serif;
   font-size: 25px;
   letter-spacing: 1px;
 }
 
-.DesignP{
+.DesignP {
   margin: 3em 15em;
   padding: 3em 3em;
   align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: rgb(105,28,74);
+  background-color: rgb(105, 28, 74);
 }
-.DesignP img{
+
+.DesignP img {
   width: 50%;
   margin: 3em 3em;
   height: 300px;
   border: 5px solid white;
 }
 
-.Assets{
+.Assets {
   margin: 3em 15em;
   padding: 3em 3em;
   align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: rgb(161,53,3);
+  background-color: rgb(105, 28, 74);
 }
 
-.Assets img{
+.Assets img {
   width: 50%;
   margin: 3em 3em;
   height: 300px;
@@ -341,63 +366,58 @@ a:hover{
 
 footer {
   text-align: center;
-  background-color: rgb(0,40,64);
+  background-color: rgb(0, 40, 64);
   padding: 2em;
   margin: 0;
   color: white;
   font-family: 'Patrick Hand', cursive;
 }
-footer h4{
+
+footer h4 {
   font-size: 25px;
 }
-footer p{
+
+footer p {
   font-family: 'Roboto', sans-serif;
 }
 
-svg{
+svg {
   margin: 1em;
   scale: 2;
 }
 
 /*GAMEPLAY*/
 
-video{
+video {
   width: 900px;
   height: 500px;
   margin: 3em;
 }
-.video{
+
+.video {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.video p{
+
+.video p {
   font-family: 'Pixelify Sans', sans-serif;
   font-size: 40px;
 }
 
-.shop{
+.shop {
   margin: 3em 15em;
   padding: 3em 3em;
   align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  
+
 }
 
 
 
-.curr{
-  margin: 3em 15em;
-  padding: 3em 3em;
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.controls{
+.curr {
   margin: 3em 15em;
   padding: 3em 3em;
   align-items: center;
@@ -406,8 +426,17 @@ video{
   justify-content: center;
 }
 
+.controls {
+  margin: 3em 15em;
+  padding: 3em 3em;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
-.sections img{
+
+.sections img {
   width: 1000px;
   height: 450px;
 }
@@ -415,18 +444,18 @@ video{
 /*ASSETS*/
 
 
-.intro{
+.intro {
   text-align: center;
   margin: 5em;
   font-size: 20px;
 }
 
-.credit{
+.credit {
   margin-top: 5em;
   font-size: 30px;
 }
 
-.TileMap{
+.TileMap {
   margin: 3em 15em;
   padding: 3em 3em;
   align-items: center;
@@ -435,15 +464,7 @@ video{
   justify-content: center;
 }
 
-.Music{
-  margin: 3em 15em;
-  padding: 3em 3em;
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.Parallax{
+.Music {
   margin: 3em 15em;
   padding: 3em 3em;
   align-items: center;
@@ -452,7 +473,16 @@ video{
   justify-content: center;
 }
 
-.Fader{
+.Parallax {
+  margin: 3em 15em;
+  padding: 3em 3em;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.Fader {
   margin: 3em 15em;
   padding: 3em 3em;
   align-items: center;
@@ -463,7 +493,7 @@ video{
 
 /*Contact*/
 
-.info{
+.info {
   align-items: center;
   display: flex;
   flex-direction: row;
@@ -475,11 +505,11 @@ video{
 
 }
 
-.info img{
+.info img {
   width: 50%;
 }
 
-.profile{
+.profile {
   border: 5px solid white;
   margin: 0;
   padding: 0;
@@ -490,7 +520,7 @@ video{
 
 /*Design*/
 
-.pixel{
+.pixel {
   margin: 3em 15em;
   padding: 3em 3em;
   align-items: center;
@@ -501,7 +531,10 @@ video{
 
 /* Bases code for slideshow obtained from https://www.w3schools.com/howto/howto_js_slideshow.asp */
 /* Slideshow container */
-* {box-sizing:border-box}
+* {
+  box-sizing: border-box
+}
+
 .slideshow-container {
   max-width: 50%;
   position: relative;
@@ -515,7 +548,8 @@ video{
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -537,8 +571,9 @@ video{
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
@@ -578,7 +613,8 @@ video{
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
@@ -589,11 +625,19 @@ video{
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
-/* end of slideshow code */
+iframe {
+  width: 800px;
+  height: 900px;
+}
 
 
 /* Media queries */
@@ -606,8 +650,13 @@ video{
   MEDIA QUERIES
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
 }
 
 /* MEDIA QUERIES FROM SMALLEST TO LARGEST = MOBILE FIRST */
@@ -615,41 +664,87 @@ video{
 No media query for `xs` since this is the default */
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { 
-  .Assets,.DesignP,.Gameplay,.shop,.curr,.controls,.TileMap,.Music,.Parallax,.Fader,.pixel,.info{
+@media (min-width: 576px) {
+
+  .Assets,
+  .DesignP,
+  .Gameplay,
+  .shop,
+  .curr,
+  .controls,
+  .TileMap,
+  .Music,
+  .Parallax,
+  .Fader,
+  .pixel,
+  .info {
     flex-direction: column;
     margin: 2em 4em;
-  
+
   }
 
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .Assets,.DesignP,.Gameplay,.shop,.curr,.controls,.TileMap,.Music,.Parallax,.Fader,.pixel,.info{
+
+  .Assets,
+  .DesignP,
+  .Gameplay,
+  .shop,
+  .curr,
+  .controls,
+  .TileMap,
+  .Music,
+  .Parallax,
+  .Fader,
+  .pixel,
+  .info {
     flex-direction: column;
     margin: 3em 7em;
-    
+
   }
- 
+
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-.Assets,.DesignP,.Gameplay,.shop,.curr,.controls,.TileMap,.Music,.Parallax,.Fader,.pixel,.info{
-  flex-direction: row;
-  margin: 3em 10em;
- 
-}
+
+  .Assets,
+  .DesignP,
+  .Gameplay,
+  .shop,
+  .curr,
+  .controls,
+  .TileMap,
+  .Music,
+  .Parallax,
+  .Fader,
+  .pixel,
+  .info {
+    flex-direction: row;
+    margin: 3em 10em;
+
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-.Assets,.DesignP,.Gameplay,.shop,.curr,.controls,.TileMap,.Music,.Parallax,.Fader,.pixel,.info{
-  flex-direction: row;
-  margin: 3em 15em;
-  
-}
-}
 
+  .Assets,
+  .DesignP,
+  .Gameplay,
+  .shop,
+  .curr,
+  .controls,
+  .TileMap,
+  .Music,
+  .Parallax,
+  .Fader,
+  .pixel,
+  .info {
+    flex-direction: row;
+    margin: 3em 15em;
 
+  }
+}

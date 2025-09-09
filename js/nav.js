@@ -8,7 +8,7 @@ function closeNav() {
   document.querySelector('.all-over-bkg').classList.remove('is-visible');
 }
 
-document.querySelector('.openbtn').addEventListener('click', openNav);
+document.querySelector('.menu-button-container').addEventListener('click', openNav);
 document.querySelector('.closebtn').addEventListener('click', closeNav);
 
 document.querySelectorAll('.dropdown-btn').forEach(button => {

@@ -755,6 +755,16 @@ iframe {
 
   .home h1 {
     width: 100%;
+    position: relative;
+    top: 10%;
+    left: 25%;
+  }
+
+  .home h2 {
+    width: 100%;
+    position: relative;
+    top: 10%;
+    left: 35%;
   }
 }
 

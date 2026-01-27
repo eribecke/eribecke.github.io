@@ -715,7 +715,7 @@ iframe {
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
   MEDIA QUERIES
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-@media screen and (min-width: 100px) {
+@media screen and (min-width: 0px) and (min-height: 0px) {
 
   .Assets,
   .DesignP,

@@ -715,7 +715,8 @@ iframe {
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
   MEDIA QUERIES
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-@media screen and (max-height: 450px) {
+@media screen and (min-width: 100px) {
+
   .Assets,
   .DesignP,
   .Gameplay,
@@ -732,12 +733,11 @@ iframe {
     margin: 0em 0em;
     padding: 0;
   }
- 
-  .Gameplay p{
-   
-  }
+
+  .Gameplay p {}
+
   .Gameplay img {
-    width: 90%;
+    width: 50%;
   }
 }
 
@@ -762,7 +762,7 @@ No media query for `xs` since this is the default */
   .info {
     flex-direction: column;
     margin: 2em 4em;
-    padding: 0;
+    padding: 1em;
 
 
   }
@@ -772,8 +772,28 @@ No media query for `xs` since this is the default */
     margin: 2em;
   }
 
-  .Gameplay p{
-    
+  .Gameplay p {
+    font-size: 15px;
+  }
+
+  .DesignP p {
+    font-size: 15px;
+  }
+
+  .Gameplay a {
+    font-size: 13px;
+  }
+
+  .DesignP a {
+    font-size: 13px;
+  }
+
+  .info p {
+    font-size: 20px;
+  }
+
+  .info h3 {
+    font-size: 25px;
   }
 
 }
@@ -798,14 +818,16 @@ No media query for `xs` since this is the default */
   }
 
   .Gameplay img {
-    max-width: 90%;
+    max-width: 50%;
     margin: 2em;
   }
 
   .DesignP img {
-    max-width: 90%;
+    max-width: 50%;
     margin: 2em;
   }
+
+
 
 }
 
@@ -847,6 +869,7 @@ No media query for `xs` since this is the default */
   .info {
     flex-direction: row;
     margin: 3em 15em;
+    padding: 2em;
 
   }
 }

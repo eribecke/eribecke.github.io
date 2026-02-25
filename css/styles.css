@@ -559,7 +559,7 @@ video {
   padding: 0;
   margin-left: 0;
   border: 0;
-  max-width: fit-content;
+
 
 }
 
@@ -700,9 +700,10 @@ video {
   }
 }
 
-iframe {
-  width: 800px;
-  height: 900px;
+.info h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
 }
 
 
@@ -740,12 +741,24 @@ iframe {
     width: 90%;
   }
 
+  .Gameplay iframe {
+    border: 0;
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: auto;
+
+  }
+
   .DesignP img {
     width: 90%;
   }
 
   .info img {
     width: 100%;
+  }
+
+  .home {
+    max-width: 100vw;
   }
 
   .home header {
@@ -807,29 +820,17 @@ No media query for `xs` since this is the default */
     width: 100%;
   }
 
-  .Gameplay p {
-    font-size: 15px;
-  }
+  .Gameplay p {}
 
-  .DesignP p {
-    font-size: 15px;
-  }
+  .DesignP p {}
 
-  .Gameplay a {
-    font-size: 13px;
-  }
+  .Gameplay a {}
 
-  .DesignP a {
-    font-size: 13px;
-  }
+  .DesignP a {}
 
-  .info p {
-    font-size: 20px;
-  }
+  .info p {}
 
-  .info h3 {
-    font-size: 25px;
-  }
+  .info h3 {}
 
   .home header {
     width: 100%;

@@ -24,6 +24,8 @@
     Roboto: https://fonts.google.com/specimen/Roboto
     Patrick Hand: https://fonts.google.com/specimen/Patrick+Hand?query=patrick+hand
     Pixelfy Sans: https://fonts.google.com/specimen/Pixelify+Sans?query=pixe
+    Barlow: https://fonts.google.com/specimen/Barlow
+    Jersey: https://fonts.google.com/specimen/Jersey+10 
 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,6 +44,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/animejs/dist/bundles/anime.umd.min.js"></script>
+    <script>
+        const { animate } = anime;
+    </script>
 
 </head>
 
@@ -80,7 +86,7 @@
     </nav>
     <div class="menu-button-container">
 
-        <img class="logo" src="images/fox-plane.png" alt="logo">
+        <img class="logo" src="images/fox-plane.png" alt="logo" id="jeffry">
 
         <span class="menu-text">MENU</span>
     </div>
@@ -130,7 +136,7 @@
             <img src="images/fan-song.png" alt="fansong-asset">
             <article class="text">
                 <h3>Project AfterBurner</h3>
-                <p>I am currently a programmer for the top down war plane simulator Project AfterBurner. I have done
+                <p>I was a programmer for the top down war plane simulator Project AfterBurner. I have done
                     work with some of the audio programming and plan to help with implementing several other systems
                     that will be in the game. I have also created several pixel art assets for the game.</p>
                 <a href="/pabAssets.html">View my Asset Gallery</a>
@@ -176,6 +182,7 @@
 
     <!--JS-->
     <script src="js/nav.js"></script>
+    <script type="module" src="js/animations.js"></script>
 
 </body>
 

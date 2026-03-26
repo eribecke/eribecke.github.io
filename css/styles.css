@@ -58,6 +58,23 @@ body {
   height: 100px;
 }
 
+.buddy {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*
+  Use set height and width if buddy is content
+  */
+  width: auto;
+  height: auto;
+  transition: transform 300ms ease-out;
+  pointer-events: none;
+  z-index: 9999999;
+  will-change: transform;
+
+  transform: translate(-200%, -200%);
+}
+
 /* NAVIGATION */
 
 

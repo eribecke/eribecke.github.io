@@ -62,9 +62,6 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  /*
-  Use set height and width if buddy is content
-  */
   width: auto;
   height: auto;
   transition: transform 300ms ease-out;
@@ -73,6 +70,11 @@ body {
   will-change: transform;
 
   transform: translate(-200%, -200%);
+}
+
+.buddy img {
+  width: 60px;
+  height: 60px;
 }
 
 /* NAVIGATION */
@@ -85,6 +87,7 @@ body {
   position: fixed;
   top: 5px;
   left: 15px;
+  z-index: 1000;
 }
 
 .menu-button-container:hover {
@@ -244,7 +247,7 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 450px;
+  height: 700px;
 }
 
 
@@ -726,6 +729,16 @@ video {
   font-size: 40px;
 }
 
+.panel {
+  opacity: 0;
+  translate: -50%;
+  transition: 800ms ease;
+}
+
+.panel.show {
+  opacity: 1;
+  translate: 0;
+}
 
 /* Media queries */
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -753,6 +766,10 @@ video {
     flex-direction: column;
     margin: 0em 0em;
     padding: 1em;
+  }
+
+  .buddy {
+    visibility: hidden;
   }
 
   .Gameplay p {}
@@ -783,6 +800,7 @@ video {
 
   .home header {
     width: 100%;
+
 
   }
 
@@ -825,6 +843,10 @@ No media query for `xs` since this is the default */
     padding: 1em;
 
 
+  }
+
+  .buddy {
+    visibility: hidden;
   }
 
   .Gameplay img {
@@ -878,6 +900,10 @@ No media query for `xs` since this is the default */
     margin: 3em 3em;
   }
 
+  .buddy {
+    visibility: hidden;
+  }
+
   .Gameplay img {
     max-width: 50%;
     margin: 2em;
@@ -922,9 +948,14 @@ No media query for `xs` since this is the default */
 
   }
 
+  .buddy {
+    visibility: visible;
+  }
+
+
+
   .home header {
     width: 100%;
-
   }
 }
 
@@ -947,6 +978,10 @@ No media query for `xs` since this is the default */
     margin: 3em 15em;
     padding: 2em;
 
+  }
+
+  .buddy {
+    visibility: visible;
   }
 
   .home header {

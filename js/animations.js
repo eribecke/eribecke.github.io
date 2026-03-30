@@ -2,6 +2,19 @@ import { animate, createDraggable, spring } from 'https://esm.sh/animejs';
 
 
 const cursorBuddy = document.getElementById("buddy");
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            console.log(entry.target);
+            entry.target.classList.add("show");
+        }
+        else {
+            entry.target.classList.remove("show");
+        }
+    })
+}, {})
+const infoPanels = document.querySelectorAll(".panel");
+infoPanels.forEach(panel => observer.observe(panel));
 let currX = 0;
 let currY = 0;
 const distanceOffset = -20;

@@ -1,4 +1,4 @@
-import { animate, createDraggable, spring } from 'https://esm.sh/animejs';
+//import { animate, createDraggable, spring } from 'https://esm.sh/animejs';
 
 
 const cursorBuddy = document.getElementById("buddy");
@@ -37,7 +37,7 @@ let jeffry = document.getElementsByClassName("logo");
 
 
 
-animate(jeffry, {
+/* animate(jeffry, {
     y: {
         to: '1em',
     },
@@ -47,6 +47,6 @@ animate(jeffry, {
     alternate: true
 
 
-});
+}); */
 
 

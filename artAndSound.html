@@ -5,10 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--
-        Add Your Name and Project Title Here
-    -->
-    <title>Fox Flight</title>
+
+    <title>Home</title>
     <!-- Favicons -->
     <link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png" sizes="180x180">
     <link rel="icon" href="images/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
@@ -22,6 +20,13 @@
     <!-- custom styles -->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <!--Font-->
+    <!--Font Credits
+    Roboto: https://fonts.google.com/specimen/Roboto
+    Patrick Hand: https://fonts.google.com/specimen/Patrick+Hand?query=patrick+hand
+    Pixelfy Sans: https://fonts.google.com/specimen/Pixelify+Sans?query=pixe
+    Barlow: https://fonts.google.com/specimen/Barlow
+    Jersey: https://fonts.google.com/specimen/Jersey+10 
+-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -35,20 +40,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Patrick+Hand&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
 
+
 </head>
 
 <body>
 
-    <!--Nav-->
+
     <nav id="mySidenav" class="sidenav">
         <ul>
             <li><a class="closebtn">&times;</a></li>
@@ -82,86 +84,113 @@
             </li>
         </ul>
     </nav>
-
+    <div class="buddy" id="buddy">
+        <div><img src="images/fox-plane.png" alt="Jeffry">
+        </div>
+    </div>
     <div class="menu-button-container">
 
-        <img class="logo" src="images/fox-plane.png" alt="logo">
+        <img class="logo" src="images/fox-plane.png" alt="logo" id="jeffry">
 
         <span class="menu-text">MENU</span>
     </div>
 
-
     <main class="home">
         <header>
-            <h1 class>Project AfterBurner</h1>
-            <h2>Assets</h2>
+            <h1 class>Erika Becker</h1>
+            <h2>Game Developer</h2>
         </header>
 
-        <!--Content-->
 
-        <p class="intro">I created my sprite assets using Aseprite</p>
 
-        <!--Code for slideshow obtained from https://www.w3schools.com/howto/howto_js_slideshow.asp-->
-        <!-- Slideshow container -->
-        <div class="slideshow-container" style="scale:.8">
+        <div class="panel">
 
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 6</div>
-                <img src="/images/fan-song.png" style="width:950px; height: 700px;">
-                <div class="slidetext">Fan Song Sprite</div>
+            <div class="info">
+                <h3>No Matter the Cost</h3>
+            </div>
+            <div class="DesignP"><img src="images/whateverittakesCover.JPG" alt="">
+                <h3>Play my game "No Matter the Cost" on<a href="https://eribecke.itch.io/whatever-it-takes">
+                        itch.io!</a></h1>
             </div>
 
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 6</div>
-                <img src="images/guideline.png" style="width:950px; height: 700px;">
-                <div class="slidetext">Guideline Sprite</div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 6</div>
-                <img src="images/tank_body.png" style="width:950px; height: 700px;">
-                <div class="slidetext">Tank Body Sprite</div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">4 / 6</div>
-                <img src="images/tank_turret.png" style="width:950px; height: 700px;">
-                <div class="slidetext">Tank Turret Sprite</div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">5 / 6</div>
-                <img src="images/biome sample.png" style="width:950px; height: 700px;">
-                <div class="slidetext">Biome Tiles</div>
-            </div>
-
-            <div class="mySlides fade">
-                <div class="numbertext">6 / 6</div>
-                <img src="images/clouds.png" style="width:950px; height: 700px;">
-                <div class="slidetext">Cloud Tiles</div>
-            </div>
-
-
-
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-        <br>
 
-        <!-- The dots/circles -->
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-            <span class="dot" onclick="currentSlide(5)"></span>
-            <span class="dot" onclick="currentSlide(6)"></span>
+        <div class="panel">
+
+            <div class="info">
+                <h3>Assets</h3>
+            </div>
+            <div class="slideshow-container" style="scale:.8">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 9</div>
+                    <img src="/images/cherrytree.png" style="width:950px; height: 700px;">
+                    <div class="slidetext">Cherry Tree</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 9</div>
+                    <img src="images/aiyaruki_attack2.gif" style="width:950px; height: 700px;">
+                    <div class="slidetext">Aiyaruki Attack 1</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 9</div>
+                    <img src="images/aiyaruki_attack3.gif" style="width:950px; height: 700px;">
+                    <div class="slidetext">Aiyaruki Attack 2</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 9</div>
+                    <img src="images/moon.png" style="width:950px; height: 700px;">
+                    <div class="slidetext">Moon</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 9</div>
+                    <img src="images/enemyAttack.gif" style="width:950px; height: 700px;">
+                    <div class="slidetext">Enemy Attack</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">6 / 9</div>
+                    <img src="images/grass.png" style="width:950px; height: 700px;">
+                    <div class="slidetext">Purple Grass</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">8 / 9</div>
+                    <img src="images/purplestone.png" style="width:950px; height: 700px;">
+                    <div class="slidetext">Purple Stone Tile</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">9 / 9</div>
+                    <img src="images/witLevel1.JPG" style="width:950px; height: 700px;">
+                    <div class="slidetext">Level 1 Screenshot</div>
+                </div>
+
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+                <span class="dot" onclick="currentSlide(8)"></span>
+                <span class="dot" onclick="currentSlide(9)"></span>
+            </div>
+
         </div>
-        <!-- End of slideshow code -->
-
-
 
 
 
@@ -190,10 +219,13 @@
     </footer>
 
     <!--JS-->
+    <script src="https://cdn.jsdelivr.net/npm/animejs/dist/bundles/anime.umd.min.js"></script>
+    <script>
+        const { animate } = anime;
+    </script>
     <script src="js/nav.js"></script>
     <script src="js/slideshow.js"></script>
     <script type="module" src="js/animations.js"></script>
-
 
 </body>
 
